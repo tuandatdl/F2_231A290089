@@ -9,7 +9,7 @@
 * **Lớp học phần:** Lập trình thiết bị di động (INT4211)
 * **Môi trường thực thi:** VS Code / Android Studio trên macOS (Apple Silicon)[cite: 9, 10]
 * **Thiết bị thử nghiệm:** Máy ảo Pixel 8 (Android 17, API 37.1 – aarch64) & Google Chrome[cite: 9]
-* **Repository GitHub:** `https://github.com/tuandatdl/F2_231A290089` (Chế độ Private, đã mời giảng viên làm Collaborator)[cite: 9, 10]
+* **Repository GitHub:** `https://github.com/tuandatdl/F2_231A290089` [cite: 9, 10]
 
 ---
 
