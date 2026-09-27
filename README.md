@@ -54,21 +54,6 @@
   * `lib/widgets/stat_box.dart`: Khối hiển thị ô điểm số thống kê có thể tái sử dụng[cite: 9].
 * Bỏ dấu gạch dưới `_` ở đầu tên các class để công khai phạm vi sử dụng và nạp vào `main.dart` bằng lệnh `import 'widgets/...';` chuẩn chỉ[cite: 9].
 
-#### 6. Bảng đối chiếu XML Layout (Lab A3) ↔ Flutter Widget (Lab F2)
-| # | Thành phần / Khái niệm layout | Android XML (Lab A3) | Flutter Widget (Lab F2) | Cơ chế hoạt động |
-|:---:|---|---|---|---|
-| **1** | Bố cục dạng cột dọc | `<LinearLayout android:orientation="vertical">`[cite: 10] | `Column(children: [...])`[cite: 9] | Sắp xếp các con nối tiếp theo chiều dọc[cite: 9, 10]. |
-| **2** | Bố cục dạng hàng ngang | `<LinearLayout android:orientation="horizontal">`[cite: 10] | `Row(children: [...])`[cite: 9] | Sắp xếp các con nối tiếp theo chiều ngang[cite: 9, 10]. |
-| **3** | Chia tỷ lệ co giãn | `android:layout_width="0dp"` + `layout_weight="1"`[cite: 10] | `Expanded(flex: 1, child: ...)`[cite: 9] | Giãn hết không gian còn lại theo tỷ lệ flex[cite: 9, 10]. |
-| **4** | Khoảng cách co giãn đẩy lề | `<Space android:layout_weight="1"/>`[cite: 10] | `Spacer()`[cite: 9] | Đẩy các phần tử lân cận về hai phía biên[cite: 9, 10]. |
-| **5** | Đệm trong và lề ngoài | `android:padding` / `android:layout_margin`[cite: 10] | `Padding(...)` / `Container(margin: ...)`[cite: 9] | Đệm bên trong và tạo khoảng cách bên ngoài[cite: 9, 10]. |
-| **6** | Chiếm hết / Vừa đủ nội dung | `match_parent` / `wrap_content`[cite: 10] | `double.infinity` / Kích thước tự nhiên[cite: 9] | Khống chế phạm vi hiển thị tối đa hoặc ôm gọn[cite: 9, 10]. |
-| **7** | Chồng lớp phần tử lên nhau | `<FrameLayout>`[cite: 10] | `Stack(children: [..., Positioned(...)])`[cite: 9] | Xếp chồng các lớp lên nhau theo trục Z[cite: 9, 10]. |
-| **8** | Vùng cuộn chống tràn | `<ScrollView android:fillViewport="true">`[cite: 10] | `SingleChildScrollView(child: ...)`[cite: 9] | Cho phép cuộn khi tràn nội dung hoặc mở bàn phím[cite: 9, 10]. |
-| **9** | Nền bo góc, viền, gradient | `res/drawable/*.xml` (`<shape>`, `<gradient>`)[cite: 10] | `BoxDecoration(gradient: ..., borderRadius: ...)`[cite: 9] | Vẽ nền chuyển màu và bo góc trực tiếp trong mã Dart[cite: 9, 10]. |
-| **10** | Chủ đề giao diện tập trung | `themes.xml`, `colors.xml`, `@style`[cite: 10] | `ThemeData`, `ColorScheme.fromSeed`[cite: 9] | Quản lý bảng màu và phông chữ tập trung chuẩn Material 3[cite: 9, 10]. |
-| **11** | Bố cục thích ứng ngang | `res/layout-land/activity_main.xml`[cite: 10] | `LayoutBuilder(builder: (ctx, constraints) ...)`[cite: 9] | Quyết định số cột dựa trên bề rộng thực tế của vùng chứa[cite: 9, 10]. |
-
 ---
 
 ### CẤU TRÚC THƯ MỤC DỰ ÁN
